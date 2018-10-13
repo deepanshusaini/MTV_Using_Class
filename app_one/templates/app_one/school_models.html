@@ -1,0 +1,12 @@
+{% extends "app_one/base.html" %}
+
+{% block body_block %}
+
+<title>School_models</title>
+<h1>School Models Are -:</h1>
+{% for school in school_list %}
+<p>Name : {{ school.school_name }} </p>
+<p>Principal : {{ school.principal }} </p>
+<p>Location : {{ school.location }} </p>
+{% endfor %}
+{% endblock %}
